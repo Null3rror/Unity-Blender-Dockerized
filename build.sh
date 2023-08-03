@@ -11,7 +11,7 @@ BLENDER_SHORT_VERSION=3.4
 BLENDER_FULL_VERSION=3.4.1
 LINUX_X64=linux-x64
 
-if [ "{$BLENDER_SHORT_VERSION}" > 2.92 ];
+if [ "$BLENDER_SHORT_VERSION" \> "2.92" ];
   then export LINUX_X64=linux-x64;
   else export LINUX_X64=linux64;
 fi
